@@ -1,14 +1,50 @@
 
-
 .crystals{
-    display: flex;
-    justify-content: space-around;
-    border: 2px solid black;
-    align-items: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .crystal{
-    border:2px solid gold;
-    height: 250px;
-    width: 200px;
+	border:1px rgba(169, 19, 19, 0.92);
+	height:200px;
+	width: 200px;
+	border-radius: 4px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	transition: box-shadow 1s, transform .5s;
+	
+}
+
+.crystal:hover{
+	box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+	transform: translate(5px,80px);
+	cursor: pointer;
+	transition: box-shadow 1s, transform .5s;
+
+
+}
+
+img{
+	width:50px;
+}
+
+.glow {
+  font-size: 30px;
+  font-family: "Pacifico";
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  margin-bottom: 60px;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #000000e5, 0 0 40px #000000e5, 0 0 50px #000000e5, 0 0 60px #000000e5, 0 0 70px #000000e5;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #3f3d3de5, 0 0 40px #3f3d3de5, 0 0 50px #3f3d3de5, 0 0 60px #3f3d3de5, 0 0 70px #3f3d3de5, 0 0 80px #3f3d3de5;
+  }
 }

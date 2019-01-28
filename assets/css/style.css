@@ -17,7 +17,7 @@
 
 .crystal:hover{
 	box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
-	transform: translate(5px,80px);
+	transform: translate(5px,60px);
 	cursor: pointer;
 	transition: box-shadow 1s, transform .5s;
 

@@ -1,10 +1,8 @@
 var randomResult;
-var lost = 0;
-var win = 0;
+var losses = 0;
+var wins = 0;
 var previous = 0;
 
-// Setters
-// Getters
 
 
 var resetAndStart = function () {
@@ -44,7 +42,7 @@ var resetAndStart = function () {
 	}
 
 	$("#previous").html("Your Total Score: " + previous);
-	$("#previous").css({"color":"rgba(169, 19, 19, 0.92)","font-size":"20pt","font-family":"Pacifico","text-align":"center"});
+	$("#previous").css({"color":"rgba(169, 19, 19, 0.92)","font-size":"20pt","font-family":"Pacifico","text-align":"center","margin-top":"60px"});
 	
 }
 
@@ -52,7 +50,7 @@ var resetAndStart = function () {
 resetAndStart();
 
 
-// Event Delegation
+
 $(document).on('click', ".crystal", function () {
 
 	var num = parseInt($(this).attr('data-random'));
@@ -66,9 +64,9 @@ $(document).on('click', ".crystal", function () {
 
 	if(previous > randomResult){
 
-		lost++;
+		losses++;
 
-		$("#lost").html("You lost: " + lost).css({"color":"rgba(169, 19, 19, 0.92)","font-size":"20pt","font-family":"Pacifico"});
+		$("#lost").html("You lost: " + losses).css({"color":"rgba(169, 19, 19, 0.92)","font-size":"20pt","font-family":"Pacifico"});
 
 		previous = 0;
 
@@ -77,9 +75,9 @@ $(document).on('click', ".crystal", function () {
 	} 
 	else if(previous === randomResult){
 
-		win++;
+		wins++;
 
-		$("#win").html("You win: " + win).css({"color":"rgba(169, 19, 19, 0.92)","font-size":"20pt","font-family":"Pacifico"});
+		$("#win").html("You win: " + wins).css({"color":"rgba(169, 19, 19, 0.92)","font-size":"20pt","font-family":"Pacifico"});
 
 		previous = 0;
 

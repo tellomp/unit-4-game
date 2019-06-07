@@ -16,7 +16,7 @@
 
 ### Live App
 
-* Click hear to play the crystal game! https://tellomp.github.io/unit-4-game/ 
+* Click here to play the crystal game! https://tellomp.github.io/unit-4-game/ 
 
 ### Technologies used
 * HTML

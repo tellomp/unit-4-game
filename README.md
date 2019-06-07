@@ -1,4 +1,4 @@
-# Crystals Game
+# Crystal Game
 
 ### Overview
 
@@ -16,7 +16,7 @@
 
 ### Live App
 
-* Click hear to play the crystals game! 
+* Click hear to play the crystal game! https://tellomp.github.io/unit-4-game/ 
 
 ### Technologies used
 * HTML

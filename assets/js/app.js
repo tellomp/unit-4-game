@@ -10,15 +10,15 @@ var resetAndStart = function () {
 	$(".crystals").empty();
 
 	var images = [
-			'assets/images/crystal1.jpeg', 
-			'assets/images/crystal2.jpeg', 
-			'assets/images/crystal3.jpeg', 
+			'assets/images/crystal1.jpg', 
+			'assets/images/crystal2.jpg', 
+			'assets/images/crystal3.jpg', 
 			'assets/images/crystal4.jpg'];
 		
 	randomResult = Math.floor(Math.random() * 69 ) + 30; 
 
 
-	$("#result").html('Number to Reach: ' + randomResult).css({"color":"rgba(169, 19, 19, 0.92)","font-size":"20pt","font-family":"Pacifico", "text-align":"center"});
+	$("#result").html('Number to Reach: ' + randomResult).css({"color":"#0F0F11","font-size":"30pt","font-family":'Rochester', 'font-weight':'bolder',"text-align":"center"});
 	
 
 	for(var i = 0; i < 4; i++){
@@ -42,7 +42,7 @@ var resetAndStart = function () {
 	}
 
 	$("#previous").html("Your Total Score: " + previous);
-	$("#previous").css({"color":"rgba(169, 19, 19, 0.92)","font-size":"20pt","font-family":"Pacifico","text-align":"center","margin-top":"60px"});
+	$("#previous").css({"color":"#0F0F11","font-size":"30pt","font-family":'Rochester','font-weight':'bolder',"text-align":"center","margin-top":"60px"});
 	
 }
 
@@ -66,7 +66,7 @@ $(document).on('click', ".crystal", function () {
 
 		losses++;
 
-		$("#lost").html("You lost: " + losses).css({"color":"rgba(169, 19, 19, 0.92)","font-size":"20pt","font-family":"Pacifico"});
+		$("#lost").html("You lost: " + losses).css({"color":"#0F0F11","font-size":"25pt","font-family":'Rochester'});
 
 		previous = 0;
 
@@ -77,7 +77,7 @@ $(document).on('click', ".crystal", function () {
 
 		wins++;
 
-		$("#win").html("You win: " + wins).css({"color":"rgba(169, 19, 19, 0.92)","font-size":"20pt","font-family":"Pacifico"});
+		$("#win").html("You win: " + wins).css({"color":"#0F0F11","font-size":"25pt","font-family":'Rochester'});
 
 		previous = 0;
 
